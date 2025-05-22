@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# Control Gastos ContextAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para registrar, visualizar y gestionar gastos personales mensuales. Utiliza Context API y useReducer para un manejo global y eficiente del estado, con interfaz limpia e intuitiva.
 
-Currently, two official plugins are available:
+## Dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clonar el proyecto :
+   `git clone https://github.com/tu-usuario/control-gastos-contextapi.git `
+   ` cd control-gastos-contextapi `
+2. Instalar dependencias
+   `npm install `
+3. Levantar el proyecto en modo desarrollo
+   `npm run dev `
+4. Build para producción
+   ` npm run build `
+5. Vista previa del build de producción
+   ` npm run preview `
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. React 19
+2. TypeScript
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Estilos y Diseño
+  1. Tailwind CSS
+  2. PostCSS + Autoprefixer
+  3. Heroicons
+  4. Headless UI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Herramientas de Desarrollo
+  1. Vite
+  2. ESLint + TypeScript ESLint
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Gestión de Datos y Lógica
+  1. Context API
+  2. useReducer
+  3. UUID
+  4. PropTypes
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Componentes UI y Funcionalidades
+  1. react-calendar & react-date-picker (selección de fechas)
+  2. react-circular-progressbar (visualización de presupuesto)
+  3. react-swipeable-list (interacción con elementos deslizables)

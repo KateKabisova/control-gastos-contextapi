@@ -5,7 +5,7 @@ Aplicación web para registrar, visualizar y gestionar gastos personales mensual
 ## Dev
 
 1. Clonar el proyecto :
-   `git clone https://github.com/tu-usuario/control-gastos-contextapi.git `
+   `git clone https://github.com/KateKabisova/control-gastos-contextapi `
    ` cd control-gastos-contextapi `
 2. Instalar dependencias
    `npm install `
